@@ -1,0 +1,27 @@
+@import url(./_fonts.scss);
+
+body {
+  margin: 0;
+  padding: 0;
+
+  h1 {
+    font-family: "KlarnaDisplay-Bold";
+  }
+  h3,
+  h4 {
+    font-family: "KlarnaText-Medium";
+  }
+  a,
+  p,
+  span,
+  h2 {
+    font-family: "KlarnaText-Regular";
+  }
+
+  ul {
+    font-family: "KlarnaText-Regular";
+
+    text-decoration: none;
+    list-style: none;
+  }
+}

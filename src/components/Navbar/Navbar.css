@@ -1,0 +1,295 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar:hover {
+  background-color: white;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.navbar.bg-white {
+  background-color: white;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.navbar img {
+  width: 5rem;
+  margin-right: 25px;
+}
+
+.links {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.links a:hover {
+  color: #305f75;
+  text-decoration: underline;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  margin: 0 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.buttons span {
+  background-color: white;
+  color: black;
+  padding: 0.35rem 1rem;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.buttons span:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons .download {
+  background-color: black;
+  color: white;
+  margin-right: 1rem;
+}
+
+.buttons .download:hover {
+  background-color: white;
+  color: black;
+}
+
+.shop-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  top: -35rem;
+  opacity: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  gap: 16rem;
+  margin-left: 5rem;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+
+.shop-list p:hover,
+.shop-list li:hover {
+  color: #305f75;
+}
+
+.shop-list span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.shop-list .shop-list-1 li {
+  margin-top: 30px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.shop-list .shop-list-2 li {
+  margin-top: 10px;
+  font-size: large;
+  font-weight: 100;
+}
+
+.shop-list .shop-list-3 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.shop-list .shop-list-3 li img {
+  width: 50px;
+}
+
+.shop:hover .shop-list {
+  top: 5rem;
+  opacity: 100%;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.dealer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  top: -35rem;
+  opacity: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  gap: 16rem;
+  margin-left: 5rem;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+  margin-top: 10px;
+  font-size: large;
+  font-weight: 100;
+}
+
+.dealer-list p:hover,
+.dealer-list li:hover {
+  color: #305f75;
+}
+
+.dealer-list span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.dealer-list ul li {
+  margin-top: 15px;
+}
+
+.dealer-list .dealer-title {
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.dealer:hover .dealer-list {
+  top: 4.5rem;
+  opacity: 100%;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.help-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  top: -35rem;
+  opacity: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 4rem;
+  gap: 16rem;
+  margin-left: 5rem;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+  margin-top: 10px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.help:hover .help-list {
+  top: 4.5rem;
+  opacity: 100%;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+/*# sourceMappingURL=Navbar.css.map */

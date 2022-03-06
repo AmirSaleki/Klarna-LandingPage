@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { useState } from "react";
+import Navbar from "./components/Navbar/Navbar";
+import Banner from "./components/Banner/Banner";
+import Deals from "./components/Deals/Deals";
+import KlarnaApp from "./components/KlarnaApp/KlarnaApp";
+import Tiles from "./components/Tiles/Tiles";
+import KlarnaCard from "./components/KlarnaCard/KlarnaCard";
+import Footer from "./components/Footer/Footer";
 
 function App() {
+  const [isScrolledToDeal, setIsScrolledToDeal] = useState(false);
+  const [isScrolledToCard, setIsScrolledToCard] = useState(false);
+
+  const isScrolled = () => {
+    setIsScrolledToDeal(true);
+  };
+  const isScrolledCard = () => {
+    setIsScrolledToCard(true);
+  };
+  const scrolledToTop = () => {
+    setIsScrolledToDeal(false);
+    setIsScrolledToCard(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar
+        isScrolled={isScrolled}
+        isScrolledCard={isScrolledCard}
+        scrolledToTop={scrolledToTop}
+      />
+      <div className="container">
+        <Banner />
+        <Deals isScrolled={isScrolledToDeal} backToTop={isScrolledToDeal} />
+        <KlarnaApp />
+        <Tiles />
+        <KlarnaCard
+          isScrolledToCard={isScrolledToCard}
+          backToTop={isScrolledToCard}
+        />
+        <Footer />
+      </div>
+    </>
   );
 }
 

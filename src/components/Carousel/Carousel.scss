@@ -1,0 +1,21 @@
+@import "../../mixin";
+
+.carousel-container {
+  .buttons {
+    img {
+      cursor: pointer;
+      width: 20px;
+      margin-top: 1rem;
+    }
+  }
+
+  .carousel {
+    @include flex(row, flex-start, center);
+
+    img {
+      width: 365px;
+      height: 255px;
+      margin: 1rem 1.5rem 1rem 0;
+    }
+  }
+}

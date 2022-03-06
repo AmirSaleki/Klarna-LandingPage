@@ -1,0 +1,61 @@
+@import "../../mixin";
+
+.klarnaCard-container {
+  width: 100%;
+  background-color: #ffe6cc;
+
+  .flex {
+    padding: 8rem;
+    margin: auto;
+    width: 60%;
+    @include flex;
+    gap: 4rem;
+  }
+  .left-side {
+    img {
+      height: 80vh;
+    }
+  }
+  .right-side {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      line-height: 1.7rem;
+      font-size: large;
+      margin-bottom: 4rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 1rem;
+      font-weight: 600;
+    }
+
+    &.start-animation {
+      h1 {
+        animation: slide-left 0.7s ease-out forwards;
+      }
+      p {
+        animation: slide-left 0.9s ease-out forwards;
+      }
+      a {
+        animation: slide-left 1s ease-out forwards;
+      }
+    }
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(8rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

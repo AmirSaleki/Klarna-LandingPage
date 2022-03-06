@@ -1,0 +1,33 @@
+@import "../../mixin";
+
+.tiles-container {
+  @include flex(column, flex-start, flex-start);
+
+  .first-tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+
+    img {
+      width: 15rem;
+    }
+  }
+
+  .second-tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    gap: 3rem;
+
+    img {
+      width: 15rem;
+    }
+  }
+
+  h4 {
+    color: #305f75;
+    margin: 5rem 0;
+  }
+}

@@ -1,0 +1,54 @@
+@import "../../mixin";
+
+.bannerContainer {
+  width: 100%;
+  height: 100vh;
+  @include flex();
+
+  .text {
+    flex: 1.5;
+    text-align: center;
+    h1 {
+      font-size: 5rem;
+      padding: 0;
+      margin: 0;
+    }
+    h2 {
+      font-weight: 200;
+      font-size: 1.3rem;
+    }
+    p {
+      font-weight: 600;
+    }
+    img {
+      width: 8rem;
+    }
+  }
+
+  .text-style {
+    width: 40%;
+    margin-left: 25%;
+    text-align: left;
+    vertical-align: center;
+  }
+
+  .image {
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../resources/images/klarna-landing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+  }
+  .qr {
+    width: 3rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+  }
+
+  ::selection {
+    background-color: rgb(214, 214, 214);
+  }
+}
